@@ -1,6 +1,6 @@
-package main.java.com.itmo.java.basics.index.impl;
+package com.itmo.java.basics.index.impl;
 
-import main.java.com.itmo.java.basics.index.SegmentOffsetInfo;
+import com.itmo.java.basics.index.SegmentOffsetInfo;
 
 public class SegmentIndex extends MapBasedKvsIndex<String, SegmentOffsetInfo> {
 }
