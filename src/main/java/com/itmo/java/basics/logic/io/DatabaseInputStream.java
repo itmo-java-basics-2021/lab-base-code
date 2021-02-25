@@ -1,7 +1,7 @@
-package main.java.com.itmo.java.basics.logic.io;
+package com.itmo.java.basics.logic.io;
 
-import main.java.com.itmo.java.basics.logic.DatabaseRecord;
-import main.java.com.itmo.java.basics.logic.WritableDatabaseRecord;
+import com.itmo.java.basics.logic.DatabaseRecord;
+import com.itmo.java.basics.logic.WritableDatabaseRecord;
 
 import java.io.DataInputStream;
 import java.io.IOException;

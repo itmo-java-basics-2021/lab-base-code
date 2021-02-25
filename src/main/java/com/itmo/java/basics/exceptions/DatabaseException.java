@@ -1,4 +1,4 @@
-package main.java.com.itmo.java.basics.exceptions;
+package com.itmo.java.basics.exceptions;
 
 public class DatabaseException extends Exception {
     public DatabaseException(String message) {

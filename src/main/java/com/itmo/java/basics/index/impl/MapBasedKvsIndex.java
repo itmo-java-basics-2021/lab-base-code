@@ -1,6 +1,6 @@
-package main.java.com.itmo.java.basics.index.impl;
+package com.itmo.java.basics.index.impl;
 
-import main.java.com.itmo.java.basics.index.KvsIndex;
+import com.itmo.java.basics.index.KvsIndex;
 
 import java.util.HashMap;
 import java.util.Map;

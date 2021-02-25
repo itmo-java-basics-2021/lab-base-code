@@ -1,4 +1,4 @@
-package main.java.com.itmo.java.basics.index;
+package com.itmo.java.basics.index;
 
 public interface SegmentOffsetInfo {
     long getOffset();

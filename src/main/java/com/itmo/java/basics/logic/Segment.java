@@ -1,6 +1,6 @@
-package main.java.com.itmo.java.basics.logic;
+package com.itmo.java.basics.logic;
 
-import main.java.com.itmo.java.basics.exceptions.DatabaseException;
+import com.itmo.java.basics.exceptions.DatabaseException;
 
 import java.io.IOException;
 import java.util.Optional;

@@ -1,8 +1,8 @@
-package main.java.com.itmo.java.basics.logic.impl;
+package com.itmo.java.basics.logic.impl;
 
-import main.java.com.itmo.java.basics.exceptions.DatabaseException;
-import main.java.com.itmo.java.basics.index.impl.TableIndex;
-import main.java.com.itmo.java.basics.logic.Table;
+import com.itmo.java.basics.exceptions.DatabaseException;
+import com.itmo.java.basics.index.impl.TableIndex;
+import com.itmo.java.basics.logic.Table;
 
 import java.nio.file.Path;
 import java.util.Optional;

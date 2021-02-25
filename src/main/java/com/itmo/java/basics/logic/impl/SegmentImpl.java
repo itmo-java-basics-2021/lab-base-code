@@ -1,7 +1,7 @@
-package main.java.com.itmo.java.basics.logic.impl;
+package com.itmo.java.basics.logic.impl;
 
-import main.java.com.itmo.java.basics.logic.Segment;
-import main.java.com.itmo.java.basics.exceptions.DatabaseException;
+import com.itmo.java.basics.logic.Segment;
+import com.itmo.java.basics.exceptions.DatabaseException;
 
 import java.io.IOException;
 import java.nio.file.Path;
