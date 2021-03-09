@@ -22,7 +22,7 @@ public class SegmentImpl implements Segment {
     }
 
     @Override
-    public boolean write(String objectKey, byte[] objectValue) throws IOException, DatabaseException {
+    public boolean write(String objectKey, byte[] objectValue) throws IOException {
         return false;
     }
 
