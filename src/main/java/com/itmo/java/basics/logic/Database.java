@@ -36,7 +36,7 @@ public interface Database {
      * @param tableName таблица, из которой нужно считать значение
      * @param objectKey ключ, по которому нужно получить значение
      * @return значение, которое находится по ключу
-     * @throws DatabaseException если не была найдена указанная таблица, или если не была найдена запись по данному ключу, или произошла ошибка ввода-вывода
+     * @throws DatabaseException если не была найдена указанная таблица, или произошла ошибка ввода-вывода
      */
     Optional<byte[]> read(String tableName, String objectKey) throws DatabaseException;
 
