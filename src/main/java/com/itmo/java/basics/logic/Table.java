@@ -35,7 +35,7 @@ public interface Table {
      *
      * @param objectKey ключ, по которому нужно получить значение
      * @return значение, которое находится по ключу
-     * @throws DatabaseException если не была найдена запись по данному ключу или произошла ошибка ввода-вывода
+     * @throws DatabaseException если произошла ошибка ввода-вывода
      */
     Optional<byte[]> read(String objectKey) throws DatabaseException;
 
