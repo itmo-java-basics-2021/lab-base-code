@@ -2,13 +2,18 @@ package com.itmo.java.basics.logic.impl;
 
 import com.itmo.java.basics.exceptions.DatabaseException;
 import com.itmo.java.basics.index.impl.TableIndex;
+import com.itmo.java.basics.initialization.TableInitializationContext;
 import com.itmo.java.basics.logic.Table;
 
 import java.nio.file.Path;
 import java.util.Optional;
 
 public class TableImpl implements Table {
-    static Table create(String tableName, Path pathToDatabaseRoot, TableIndex tableIndex) throws DatabaseException {
+    public static Table create(String tableName, Path pathToDatabaseRoot, TableIndex tableIndex) throws DatabaseException {
+        return null;
+    }
+
+    public static Table initializeFromContext(TableInitializationContext context) {
         return null;
     }
 
