@@ -13,7 +13,7 @@ public class InitializationContextImpl implements InitializationContext {
     private final TableInitializationContext currentTableContext;
     private final SegmentInitializationContext currentSegmentContext;
 
-    private InitializationContextImpl(ExecutionEnvironment executionEnvironment,
+    public InitializationContextImpl(ExecutionEnvironment executionEnvironment,
                                       DatabaseInitializationContext currentDatabaseContext,
                                       TableInitializationContext currentTableContext,
                                       SegmentInitializationContext currentSegmentContext) {

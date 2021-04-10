@@ -6,7 +6,7 @@ import com.itmo.java.basics.initialization.SegmentInitializationContext;
 import java.nio.file.Path;
 
 public class SegmentInitializationContextImpl implements SegmentInitializationContext {
-    private SegmentInitializationContextImpl(String segmentName, Path segmentPath, int currentSize, SegmentIndex index) {
+    public SegmentInitializationContextImpl(String segmentName, Path segmentPath, int currentSize, SegmentIndex index) {
     }
 
     public SegmentInitializationContextImpl(String segmentName, Path tablePath, int currentSize) {
