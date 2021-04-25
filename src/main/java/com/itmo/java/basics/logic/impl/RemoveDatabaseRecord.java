@@ -2,6 +2,9 @@ package com.itmo.java.basics.logic.impl;
 
 import com.itmo.java.basics.logic.WritableDatabaseRecord;
 
+/**
+ * Запись в БД, означающая удаление значения по ключу
+ */
 public class RemoveDatabaseRecord implements WritableDatabaseRecord {
     @Override
     public byte[] getKey() {

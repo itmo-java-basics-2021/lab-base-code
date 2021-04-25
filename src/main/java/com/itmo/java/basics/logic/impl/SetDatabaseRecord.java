@@ -2,6 +2,9 @@ package com.itmo.java.basics.logic.impl;
 
 import com.itmo.java.basics.logic.WritableDatabaseRecord;
 
+/**
+ * Запись в БД, означающая добавление значения по ключу
+ */
 public class SetDatabaseRecord implements WritableDatabaseRecord {
 
     @Override

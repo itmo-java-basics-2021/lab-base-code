@@ -8,6 +8,13 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.Optional;
 
+/**
+ * Сегмент - append-only файл, хранящий пары ключ-значение, разделенные специальным символом.
+ * - имеет ограниченный размер, большие значения (>100000) записываются в последний сегмент, если он не read-only
+ * - при превышении размера сегмента создается новый сегмент и дальнейшие операции записи производятся в него
+ * - именование файла-сегмента должно позволять установить очередность их появления
+ * - является неизменяемым после появления более нового сегмента
+ */
 public class SegmentImpl implements Segment {
     public static Segment create(String segmentName, Path tableRootPath) throws DatabaseException {
         throw new UnsupportedOperationException();
