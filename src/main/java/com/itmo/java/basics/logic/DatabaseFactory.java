@@ -11,7 +11,7 @@ public interface DatabaseFactory {
      *
      * @param dbName имя базы данных
      * @param dbRoot путь до директории, в которой будет создана база данных
-     * @return объект созданной таблицы
+     * @return объект созданной бд
      * @throws DatabaseException если база данных с данным именем уже существует или если произошла ошибка ввода-вывода
      */
     Database createNonExistent(String dbName, Path dbRoot) throws DatabaseException;
