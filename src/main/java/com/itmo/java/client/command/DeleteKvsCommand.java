@@ -3,7 +3,6 @@ package com.itmo.java.client.command;
 import com.itmo.java.protocol.model.RespArray;
 import com.itmo.java.protocol.model.RespBulkString;
 import com.itmo.java.protocol.model.RespCommandId;
-import com.itmo.java.protocol.model.RespObject;
 
 public class DeleteKvsCommand implements KvsCommand {
     private static final String COMMAND_NAME = "DELETE_KEY";
@@ -19,7 +18,7 @@ public class DeleteKvsCommand implements KvsCommand {
      * @return объект
      */
     @Override
-    public RespObject serialize() {
+    public RespArray serialize() {
         //TODO implement
         return null;
     }

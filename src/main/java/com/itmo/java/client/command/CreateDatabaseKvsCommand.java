@@ -3,7 +3,6 @@ package com.itmo.java.client.command;
 import com.itmo.java.protocol.model.RespArray;
 import com.itmo.java.protocol.model.RespBulkString;
 import com.itmo.java.protocol.model.RespCommandId;
-import com.itmo.java.protocol.model.RespObject;
 
 /**
  * Команда для создания бд
@@ -26,7 +25,7 @@ public class CreateDatabaseKvsCommand implements KvsCommand {
      * @return объект
      */
     @Override
-    public RespObject serialize() {
+    public RespArray serialize() {
         //TODO implement
         return null;
     }

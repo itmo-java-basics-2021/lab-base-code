@@ -2,6 +2,7 @@ package com.itmo.java.client.connection;
 
 import com.itmo.java.basics.DatabaseServer;
 import com.itmo.java.client.exception.ConnectionException;
+import com.itmo.java.protocol.model.RespArray;
 import com.itmo.java.protocol.model.RespObject;
 
 /**
@@ -15,7 +16,7 @@ public class DirectReferenceKvsConnection implements KvsConnection {
     }
 
     @Override
-    public RespObject send(int commandId, RespObject command) throws ConnectionException {
+    public RespObject send(int commandId, RespArray command) throws ConnectionException {
         //TODO implement
         return null;
     }

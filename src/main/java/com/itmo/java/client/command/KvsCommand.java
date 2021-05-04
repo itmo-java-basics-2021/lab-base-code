@@ -1,6 +1,6 @@
 package com.itmo.java.client.command;
 
-import com.itmo.java.protocol.model.RespObject;
+import com.itmo.java.protocol.model.RespArray;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -16,7 +16,7 @@ public interface KvsCommand {
      *
      * @return RESP объект
      */
-    RespObject serialize();
+    RespArray serialize();
 
     /**
      * Id команды

@@ -1,16 +1,14 @@
 package com.itmo.java.client.command;
 
-import com.itmo.java.basics.console.DatabaseCommands;
 import com.itmo.java.protocol.model.RespArray;
 import com.itmo.java.protocol.model.RespBulkString;
 import com.itmo.java.protocol.model.RespCommandId;
-import com.itmo.java.protocol.model.RespObject;
 
 /**
  * Команда для создания таблицы
  */
 public class CreateTableKvsCommand implements KvsCommand {
-    private static final DatabaseCommands COMMAND_NAME = DatabaseCommands.CREATE_TABLE;
+    private static final String COMMAND_NAME = "CREATE_TABLE";
 
     public CreateTableKvsCommand(String databaseName, String tableName) {
         //TODO implement
@@ -22,7 +20,7 @@ public class CreateTableKvsCommand implements KvsCommand {
      * @return объект
      */
     @Override
-    public RespObject serialize() {
+    public RespArray serialize() {
         //TODO implement
         return null;
     }
