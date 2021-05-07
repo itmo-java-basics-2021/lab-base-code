@@ -1,6 +1,5 @@
 package com.itmo.java.client.client;
 
-
 import com.itmo.java.client.connection.KvsConnection;
 import com.itmo.java.client.exception.DatabaseExecutionException;
 
@@ -9,10 +8,10 @@ import java.util.function.Supplier;
 public class SimpleKvsClient implements KvsClient {
 
     /**
-     * Констурктор
+     * Конструктор
      *
      * @param databaseName       имя базы, с которой работает
-     * @param connectionSupplier метод создания коннекшена к базе
+     * @param connectionSupplier метод создания подключения к базе
      */
     public SimpleKvsClient(String databaseName, Supplier<KvsConnection> connectionSupplier) {
         //TODO implement

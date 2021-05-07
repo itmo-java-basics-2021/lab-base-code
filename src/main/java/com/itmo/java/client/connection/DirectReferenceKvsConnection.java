@@ -6,7 +6,7 @@ import com.itmo.java.protocol.model.RespArray;
 import com.itmo.java.protocol.model.RespObject;
 
 /**
- * Реализация коннекшена, когда есть прямая ссылка на объект
+ * Реализация подключения, когда есть прямая ссылка на объект
  * (пока еще нет реализации сокетов)
  */
 public class DirectReferenceKvsConnection implements KvsConnection {

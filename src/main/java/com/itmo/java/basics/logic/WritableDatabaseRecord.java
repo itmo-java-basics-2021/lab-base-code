@@ -12,7 +12,7 @@ public interface WritableDatabaseRecord extends DatabaseRecord {
 
 
     /**
-     * Возвращает размер значения в байтах. -1, если значение отсутвует
+     * Возвращает размер значения в байтах. -1, если значение отсутствует
      */
     int getValueSize();
 }

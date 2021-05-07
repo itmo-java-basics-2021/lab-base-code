@@ -6,7 +6,7 @@ import com.itmo.java.basics.logic.Table;
 import java.util.Optional;
 
 /**
- * Декторато для таблицы. Кэширует данные
+ * Декоратор для таблицы. Кэширует данные
  */
 public class CachingTable implements Table {
     @Override
