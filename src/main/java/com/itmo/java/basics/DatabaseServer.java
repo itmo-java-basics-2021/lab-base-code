@@ -8,8 +8,13 @@ import com.itmo.java.basics.initialization.impl.DatabaseServerInitializer;
 import com.itmo.java.protocol.model.RespArray;
 
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class DatabaseServer {
+
+    private ExecutorService executorService = Executors.newSingleThreadExecutor();
+
     /**
      * Con structor
      *
@@ -23,8 +28,10 @@ public class DatabaseServer {
     }
 
     public CompletableFuture<DatabaseCommandResult> executeNextCommand(RespArray message) {
-        //TODO implement
-        return null;
+        return CompletableFuture.supplyAsync(() -> {
+            // code here...
+            return null;
+        }, executorService);
     }
 
     public CompletableFuture<DatabaseCommandResult> executeNextCommand(DatabaseCommand command) {
