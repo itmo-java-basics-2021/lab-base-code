@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public interface KvsCommand {
     /**
      * Счетчик для команды. Каждая созданная команда использует это поле для создания id, инкрементирует значение
-     * Первая комада создается с id 0
+     * Первая команда создается с id 0
      */
     AtomicInteger idGen = new AtomicInteger();
 

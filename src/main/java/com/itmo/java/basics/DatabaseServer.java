@@ -16,9 +16,9 @@ public class DatabaseServer {
     private ExecutorService executorService = Executors.newSingleThreadExecutor();
 
     /**
-     * Con structor
+     * Конструктор
      *
-     * @param env         env для инициализации. Далее работа происходит с заполненым объектом
+     * @param env         env для инициализации. Далее работа происходит с заполненным объектом
      * @param initializer готовый чейн инициализации
      * @throws DatabaseException если произошла ошибка инициализации
      */
