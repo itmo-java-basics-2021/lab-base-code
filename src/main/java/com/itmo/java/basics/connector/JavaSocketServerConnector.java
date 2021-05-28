@@ -14,40 +14,42 @@ import java.util.concurrent.Executors;
 /**
  * Класс, который предоставляет доступ к серверу через сокеты
  */
-public class JavaSocketServerConnector implements AutoCloseable {
+public class JavaSocketServerConnector implements Closeable {
 
     /**
      * Экзекьютор для выполнения ClientTask
      */
     private final ExecutorService clientIOWorkers = Executors.newSingleThreadExecutor();
 
+//    private final ServerSocket serverSocket; // todo uncomment
+    private final ExecutorService connectionAcceptorExecutor = Executors.newSingleThreadExecutor();
+
     /**
      * Стартует сервер. По аналогии с сокетом открывает коннекшн в конструкторе.
      * <p>
      * Начинает слушать заданный порт, начинает аксептить клиентские сокеты. На каждый из них начинает клиентскую таску
      */
-    public JavaSocketServerConnector(DatabaseServer databaseServer, ServerConfig config) {
-        //TODO implement
+    public JavaSocketServerConnector(DatabaseServer databaseServer, ServerConfig config) throws IOException {
+    }
+
+    public void start() {
+        connectionAcceptorExecutor.submit(() -> {
+            // todo implement
+        });
     }
 
     /**
-     * Стартует сервер. Начинает слушать нужный порт, на каждый клиентский сокет создает клиентскую таску и исполняет команды с помощью {@link DatabaseServer}
-     */
-    public void start() throws IOException {
-        //TODO implement
-    }
-
-    /**
-     * Закрывает все, что нужно ¯\_(ツ)_/¯ (Начавшиеся исполняться клиентские задачи должны быть исполнены)
+     * Закрывает все, что нужно ¯\_(ツ)_/¯
      */
     @Override
-    public void close() throws Exception {
-        //TODO implement
+    public void close() {
+        System.out.println("Stopping socket connector");
+        // todo implement
     }
 
 
     public static void main(String[] args) throws Exception {
-        //можнно запускать прямо здесь
+        // можнно запускать прямо здесь
     }
 
     /**
