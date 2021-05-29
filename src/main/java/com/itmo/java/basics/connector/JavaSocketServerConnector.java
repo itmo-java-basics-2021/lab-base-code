@@ -26,12 +26,13 @@ public class JavaSocketServerConnector implements Closeable {
 
     /**
      * Стартует сервер. По аналогии с сокетом открывает коннекшн в конструкторе.
-     * <p>
-     * Начинает слушать заданный порт, начинает аксептить клиентские сокеты. На каждый из них начинает клиентскую таску
      */
     public JavaSocketServerConnector(DatabaseServer databaseServer, ServerConfig config) throws IOException {
     }
-
+ 
+     /**
+     * Начинает слушать заданный порт, начинает аксептить клиентские сокеты. На каждый из них начинает клиентскую таску
+     */
     public void start() {
         connectionAcceptorExecutor.submit(() -> {
             // todo implement
